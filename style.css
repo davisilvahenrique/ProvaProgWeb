@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: #d71920;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: 0.3s;
+}
+
+.menu li a:hover {
+    background-color: #900000;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer a {
+    color: #d71920;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header {
+    background-color: #d71920;
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 70px;
+    width: auto;
+    max-width: 150px;
+}
+
+#sobre img {
+    height: 35%;
+    width: 55%;
+}
+
+.elenco-container {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.categoria {
+    background-color: #ffffff;
+    box-shadow: 3px 3px 2px #900000;
+    border-radius: 5px;
+    width: 15%;
+    padding: 5px 2px;
+}
+
+.categoria h3 {
+    padding-bottom: 8px;
+}
+
+.categoria hr {
+    color: #333333;
+    width: 85%;
+    margin: auto;
+}
+
+.categoria li {
+    display: flex;
+    padding-top: 4px;
+    padding-left: 15px;
+}
+
+section {
+    background-color: #eeeeee;
+    padding: 30px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section {
+        width: 90%;
+    }
+}
